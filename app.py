@@ -104,7 +104,7 @@ elif user_menu == 'Country-wise Analysis':
     # Title
     st.title('Country-wise Analysis')
     # Extracting country list and removing overall
-    years, country = country_years_list(df)
+    years, country = helper.country_years_list(df)
     country.remove('Overall')
     # Country dropdown menu
     optionCountry = st.sidebar.selectbox('Select Country', country)
@@ -151,7 +151,7 @@ elif user_menu == 'Athlete-wise Analysis':
     st.plotly_chart(fig)
 
 
-    st.header('Scatter plot of height & wright vs Gold Medalist')
+    st.header('Scatter plot of height & weight vs Gold Medalist')
     sportslst = helper.sportsListFind(df)
     optionSport = st.selectbox('Select Sport',sportslst)
     scatterPlotData = helper.scatterPlotGoldMedalist(df, optionSport)

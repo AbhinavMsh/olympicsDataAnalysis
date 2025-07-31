@@ -1,4 +1,0 @@
-streamlit
-plotly==6.2.0
-seaborn
-matplotlib
