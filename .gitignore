@@ -1,3 +1,5 @@
 venv
-Procfile.txt
+Procfile
 setup.sh
+.gitignore
+.idea
