@@ -3,3 +3,5 @@ Procfile
 setup.sh
 .gitignore
 .idea
+.devcontainer
+_pycache_
